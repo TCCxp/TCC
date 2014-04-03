@@ -12,28 +12,38 @@ class Cadastro extends CI_Controller {
 
     function novo_usuario() {
         $this->load->library('form_validation');
-        $this->form_validation->set_rules('login', 'Login', 'required');
         $this->form_validation->set_rules('nome', 'Nome', 'required');
-        $this->form_validation->set_rules('email', 'Email', 'required');
+        $this->form_validation->set_rules('sexo', 'Sexo', 'required');
+        $this->form_validation->set_rules('login', 'Login', 'required');
         $this->form_validation->set_rules('senha', 'Senha', 'required');
+        $this->form_validation->set_rules('email', 'Email', 'required');
+        $this->form_validation->set_rules('cidade', 'Cidade', 'required');
+        $this->form_validation->set_rules('uf', 'Estado', 'required');
+        $this->form_validation->set_rules('dia_nasc', 'Data de Nascimento', 'required');
+        $this->form_validation->set_rules('mes_nasc', 'Data de Nascimento', 'required');
+        $this->form_validation->set_rules('ano_nasc', 'Data de Nascimento', 'required');
         if ($this->form_validation->run() != FALSE) {
             $query = array(
                 'nome' => $this->input->post('nome'),
+                'sexo' => $this->input->post('sexo'),
                 'login' => $this->input->post('login'),
+                'senha' => $this->input->post('senha'),
                 'email' => $this->input->post('email'),
-                'senha' => $this->input->post('senha'));
+                'cidade' => $this->input->post('cidade'),
+                'uf' => $this->input->post('uf'),
+                'data' => $this->input->post('ano_nasc,mes_nasc,dia_nasc'));
             $this->inserir->valida_novo_usuario($query);
             echo ("<script language='JavaScript'>
-                    window.alert('Usuário cadastrado')
+                    window.alert('UsuÃ¡rio cadastrado')
                     window.location.href='http://localhost:8888/TCC/';                    
                 </script>");
-            //redirect('principal');
+            redirect('principal');
         }
         if ($this->form_validation->run() == FALSE) {
             $this->load->view('novo_usuario');
         } else {
             ("<script language='JavaScript'>
-                    window.alert('Login ou E-mail já utilizado!')
+                    window.alert('Login ou E-mail jï¿½ utilizado!')
                     window.location.href='novo_usuario';
                 </script>");
         }
