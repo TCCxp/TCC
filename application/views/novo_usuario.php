@@ -1,8 +1,49 @@
 <html>
+<<<<<<< HEAD
     <head><title>TCC</title>
         <!--<link href="layout.css" rel="stylesheet" type="text/css"/>-->
        <style>
 	   #form_cadastro{
+=======
+    <head><title></title>
+        <script language="javascript">
+        </script>
+        <style>
+         			#corpo{
+                background-color: #8B1A1A;
+                margin-left: 150px;
+            }
+            #buscar{
+                margin-top: -8;
+                background-color: #EEE5DE;
+                height: 33px;
+                max-height: 33px;
+                width: 80%;
+                max-width: 80%;
+                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+            #conteudo_novo{                
+                margin-top: 10px;
+                width: 80%;
+                height: 30%;
+            }
+            #conteudo_publicado{
+			border-left: 20%;
+			margin-top: 10px;
+			display: block;
+			max-width: 80%;
+			width: 80%;
+			background-color: #FFF;
+			max-height: 60%;
+			height: 60%;
+			border:double;
+			border-radius: 10px;
+			overflow: auto;
+            }
+			
+			#form_cadastro{
+>>>>>>> e3558e32be97e7e0f4c15a857733e400884bd395
 			padding-top: 15px;
 			padding-left: 15px;
 			border-left: 20%;
@@ -14,6 +55,7 @@
 			border:double;
 			border-radius: 10px;
 			font:"Arial Black", Gadget, sans-serif;
+<<<<<<< HEAD
 			font-size:16px;
             }
 	   </style>
@@ -21,6 +63,122 @@
     <body id="form_cadastro">
         <h3>Cadastro de usu√°rio</h3>
         <div id="info_usuario">
+=======
+			font-size:20px;
+            }
+			
+			#form_perfil{
+			padding-top: 15px;
+			padding-left: 15px;
+			border-left: 20%;
+			margin-top: 10px;
+			display: block;
+			width: 900px;
+			background-color: #FFF;
+			height: 200px;
+			border:double;
+			border-radius: 10px;
+			font:"Arial Black", Gadget, sans-serif;
+			font-size:16px;
+            }
+			
+			#form_publica_conteudo{
+			padding-top: 10px;
+			padding-left: 10px;
+			border-left: 20%;
+			margin-top: 100px;
+			margin-bottom: 100px:
+			display: block-inline;
+			width: 500px;
+			background-color: #FFF;
+			height: 100px;
+			border:double;
+			border-radius: 10px;
+			font:"Arial Black", Gadget, sans-serif;
+			font-size:16px;
+            }
+			
+			select_data{
+				display:inline-block;
+			}
+			
+			.Btn_cadastro {
+				-moz-box-shadow:inset 2px 2px 5px -6px #fed897;
+				-webkit-box-shadow:inset 2px 2px 5px -6px #fed897;
+				box-shadow:inset 2px 2px 5px -6px #fed897;
+				background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f6b33d), color-stop(1, #d29105) );
+				background:-moz-linear-gradient( center top, #f6b33d 5%, #d29105 100% );
+				filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6b33d', endColorstr='#d29105');
+				background-color:#f6b33d;
+				-webkit-border-top-left-radius:0px;
+				-moz-border-radius-topleft:0px;
+				border-top-left-radius:0px;
+				-webkit-border-top-right-radius:0px;
+				-moz-border-radius-topright:0px;
+				border-top-right-radius:0px;
+				-webkit-border-bottom-right-radius:0px;
+				-moz-border-radius-bottomright:0px;
+				border-bottom-right-radius:0px;
+				-webkit-border-bottom-left-radius:0px;
+				-moz-border-radius-bottomleft:0px;
+				border-bottom-left-radius:0px;
+				text-indent:1.57px;
+				border:1px solid #eda933;
+				display:inline-block;
+				color:#ffffff;
+				font-family:Arial Black;
+				font-size:16px;
+				font-weight:bold;
+				font-style:normal;
+				height:45px;
+				line-height:45px;
+				width:157px;
+				text-decoration:none;
+				text-align:center;
+				text-shadow:-1px -2px 0px #cd8a15;
+				margin-top: 50px;
+				margin-left: 50px;
+			}
+			.Btn_cadastro:hover {
+				background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #d29105), color-stop(1, #f6b33d) );
+				background:-moz-linear-gradient( center top, #d29105 5%, #f6b33d 100% );
+				filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d29105', endColorstr='#f6b33d');
+				background-color:#d29105;
+			}
+			.Btn_cadastro:active {
+				position:relative;
+				top:1px;
+			}
+			
+            #novo_post{
+                max-width:100%; 
+                max-height:70%;
+                width:100%; 
+                height:70%;
+                overflow: auto;
+                resize: none;
+            }
+            #resultado{
+                border-color: #8B1A1A;
+                height: 30%;
+                width: 10%;
+                max-height: 30%;
+                margin-left: 120px;
+                margin-top: -12px;
+                border-style: solid; 
+                z-index: 9999;
+                background-color: white;
+                position: absolute;
+                font-size: 25;
+                display: visible;
+            }
+
+            </style>
+    </head>
+    <body id="form_cadastro">
+        <h3>Cadastro de usu·rio</h3>
+        
+>>>>>>> e3558e32be97e7e0f4c15a857733e400884bd395
             <?php echo validation_errors(); ?>
             <?php echo form_open('cadastro/novo_usuario'); ?>
             <label for="nova" >Nome Completo:</label>
@@ -120,8 +278,14 @@
                     <input type="file" name="img_perfil" accept="image/*" id="img_perfil" value="Selecione..."/>
             <!--</form>         -->
             <input type="submit" class="Btn_cadastro" value="Confirmar" id="cadastro"/>
+<<<<<<< HEAD
             <input type="submit" class="Btn_cadastro" value="Sair" id="sair"/>    
             <?php echo form_close(); ?>
         </div>
+=======
+            <!--<input type="submit" class="Btn_cadastro" value="Sair" id="sair"/>-->    
+            <?php echo form_close();?>
+        
+>>>>>>> e3558e32be97e7e0f4c15a857733e400884bd395
     </body>
 </html>
