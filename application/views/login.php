@@ -2,11 +2,25 @@
 <html>
     <head>
         <title>TCC</title>
-        <style type="text/css">
+        <style>
+            #form_login{
+			padding-top: 15px;
+			padding-left: 15px;
+			border-left: 20%;
+			margin-top: 10px;
+			display: block;
+			width: 700px;
+			background-color: #FFF;
+			height: auto;
+			border:double;
+			border-radius: 10px;
+			font:"Arial Black", Gadget, sans-serif;
+			font-size:16px;
+            }
 
         </style>
     </head>
-    <body id="corpo">
+    <body id="form_login">
         <div>
             <form>    
                 <label for="name">Login </label>
@@ -17,7 +31,7 @@
             </form>
         </div>
         <div>
-            <p>Novo Usuário?</p>
+            <p>Novo Usuï¿½rio?</p>
             <a href="novo_usuario"> Cadastre - se aqui!</a>
         </div>
     </body>
