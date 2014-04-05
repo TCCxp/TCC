@@ -1,0 +1,66 @@
+Como um novo usuário
+Eu quero logar no LifeInvader
+Para que eu possa postar conteúdos
+
+Cenário 1 - Login sem cadastro no LifeInvader
+
+Dado que
+	Eu navego para "http://localhost/TCC/"
+Quando
+	Eu preencho a caixa de texto "login" com "Teste"
+	E eu espero por 3 segundos	
+	E eu preencho a caixa de texto "senha" com "teste"
+	E eu espero por 3 segundos	
+	E eu clico no botão "Btn_Login"
+	E eu espero por 3 segundos
+Então
+	Eu vejo o título "Login"
+
+Cenário 2 - Cadastro no LifeInvader
+
+Dado que
+	Eu navego para "http://localhost/TCC/principal/novo_usuario"
+	E eu espero por 3 segundos
+Quando
+	#Eu clico no link "Cadastre-se"
+	Eu vejo o título "Cadastro de usuario"	
+	Eu preencho a caixa de texto "nome" com "Joao"
+	E eu espero por 3 segundos
+	E eu marco a radio "rb_masc"
+	E eu espero por 3 segundos
+	E eu preencho a caixa de texto "login" com "joao"
+	E eu espero por 3 segundos	
+	E eu preencho a caixa de texto "email" com "joao@gmail.com"
+	E eu espero por 3 segundos	
+	E eu preencho a caixa de texto "senha" com "1234"
+	E eu espero por 3 segundos
+	E eu preencho a caixa de texto "cidade" com "Ponta Grossa"
+	E eu espero por 3 segundos
+	E eu seleciono o item com texto "PR" na select "uf"
+	E eu espero por 3 segundos		
+	E eu seleciono o item com texto "1" na select "dia"
+	E eu espero por 3 segundos	
+	E eu seleciono o item com texto "Janeiro" na select "mes"
+	E eu espero por 3 segundos	
+	E eu seleciono o item com texto "1988" na select "ano"
+	E eu espero por 3 segundos	
+Então
+	Eu clico no botão "cadastro"
+	E eu espero por 5 segundos
+	E eu vejo o título "Login"
+
+Cenário 3 - Login com cadastro no LifeInvader
+
+Dado que
+	Eu navego para "http://localhost/TCC/"
+Quando
+	Eu preencho a caixa de texto "login" com "joao"
+	E eu espero por 3 segundos	
+	E eu preencho a caixa de texto "senha" com "1234"
+	E eu espero por 3 segundos	
+	E eu clico no botão "Btn_Login"
+	E eu espero por 3 segundos
+Então
+	Eu vejo o título "Perfil"
+
+	
