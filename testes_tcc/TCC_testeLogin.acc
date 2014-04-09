@@ -12,4 +12,4 @@ Quando
 	E eu clico no botão "Btn_Login"
 	E eu espero por 5 segundos
 Então
-	Eu vejo o título "Perfil"
+	Eu vejo o título "TCC"

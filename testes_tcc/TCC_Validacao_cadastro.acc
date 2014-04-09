@@ -1,0 +1,81 @@
+Como um novo usuário
+Eu quero logar no LifeInvader
+Para que eu possa postar conteúdos
+
+Cenário 1 - Login sem cadastro no LifeInvader
+
+Dado que
+	Eu navego para "http://localhost/TCC/"
+Quando
+	Eu preencho a caixa de texto "login" com "Teste"
+	E eu espero por 3 segundos
+	E eu preencho a caixa de texto "senha" com "teste"
+	E eu espero por 3 segundos
+	E eu vejo que a caixa de texto "login" não está vazia
+	E eu vejo que a caixa de texto "senha" não está vazia	
+	E eu clico no botão "Btn_Login"
+	E eu espero por 3 segundos
+Então
+	E eu vejo o título "Login"
+
+Cenário 2 - Cadastro no LifeInvader
+
+Dado que
+	Eu navego para "http://localhost/TCC/principal/novo_usuario"
+	E eu espero por 3 segundos
+Quando
+	#Eu clico no link "Cadastre-se"
+	Eu vejo o título "Cadastro de usuario"	
+	E eu preencho a caixa de texto "nome" com "Joao"
+	E eu espero por 3 segundos
+	E eu marco a radio "rb_masc"
+	E eu espero por 3 segundos
+	E eu preencho a caixa de texto "login" com "joao"
+	E eu espero por 3 segundos	
+	E eu preencho a caixa de texto "email" com "joao@gmail.com"
+	E eu espero por 3 segundos	
+	E eu preencho a caixa de texto "senha" com "1234"
+	E eu espero por 3 segundos
+	E eu preencho a caixa de texto "cidade" com "Ponta Grossa"
+	E eu espero por 3 segundos
+	E eu seleciono o item com texto "PR" na select "uf"
+	E eu espero por 3 segundos		
+	E eu seleciono o item com texto "1" na select "dia"
+	E eu espero por 3 segundos	
+	E eu seleciono o item com texto "Janeiro" na select "mes"
+	E eu espero por 3 segundos	
+	E eu seleciono o item com texto "1988" na select "ano"
+	E eu espero por 3 segundos	
+Então
+	Eu vejo que a caixa de texto "nome" contém "Joao"
+	E eu vejo que a radio "rb_masc" está marcada
+	E eu vejo que a radio "rb_fem" está desmarcada
+	E eu vejo que a caixa de texto "login" contém "joao"
+	E eu vejo que a caixa de texto "email" contém "joao@gmail.com"
+	E eu vejo que a caixa de texto "senha" contém "1234"
+	E eu vejo que a caixa de texto "cidade" contém "Ponta Grossa"
+	E eu vejo que a select "uf" contém uma opção com texto "PR"
+	E eu vejo que a select "dia" contém uma opção com texto "1"
+	E eu vejo que a select "mes" contém uma opção com texto "Janeiro"
+	E eu vejo que a select "ano" contém uma opção com texto "1988"
+	E eu clico no botão "cadastro"
+	E eu espero por 5 segundos
+	E eu vejo o título "Login"
+
+Cenário 3 - Login com cadastro no LifeInvader
+
+Dado que
+	Eu navego para "http://localhost/TCC/"
+Quando
+	Eu preencho a caixa de texto "login" com "joao"
+	E eu espero por 3 segundos
+	#E eu vejo que a caixa de texto "login" contém exatamente "joao"	
+	E eu preencho a caixa de texto "senha" com "1234"
+	E eu espero por 3 segundos
+	#E eu vejo que a caixa de texto "senha" contém exatamente "1234"	
+Então
+	Eu clico no botão "Btn_Login"
+	E eu espero por 3 segundos	
+	E eu vejo o título "Perfil"
+
+	
