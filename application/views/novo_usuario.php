@@ -1,28 +1,8 @@
-<<<<<<< HEAD
-<html><head><title>TCC</title>
-<<<<<<< HEAD
-        <link rel="stylesheet" type="text/css" href="../css/layout.css"/>
-=======
-        
-    
-       <style>
-	   #form_cadastro{
-			padding-top: 15px;
-			padding-left: 15px;
-			border-left: 20%;
-			margin-top: 10px;
-			display: block;
-			width: 700px;
-			background-color: #FFF;
-			height: auto;
-			border:double;
-			border-radius: 10px;
-			font:"Arial Black", Gadget, sans-serif;
-			font-size:16px;
-=======
 <html>
+<head>
+<title>TCC</title>  
     <head><title>TCC</title>
-        <!--<link href="layout.css" rel="stylesheet" type="text/css"/>-->
+        <link href="../css/layout.css" rel="stylesheet" type="text/css">
         <style>
             #form_cadastro{
                 padding-top: 15px;
@@ -37,7 +17,7 @@
                 border-radius: 10px;
                 font:"Arial Black", Gadget, sans-serif;
                 font-size:16px;
->>>>>>> c80ccee18ff4260b2f8beaf5273ece681aa47e54
+
             }
         </style>
     </head>
