@@ -1,26 +1,22 @@
 <html>
     <head><title>TCC</title>
-<<<<<<< HEAD
-        <link rel="stylesheet" type="text/css" href="../css/layout.css"/>
-=======
         <!--<link href="layout.css" rel="stylesheet" type="text/css"/>-->
-       <style>
-	   #form_cadastro{
-			padding-top: 15px;
-			padding-left: 15px;
-			border-left: 20%;
-			margin-top: 10px;
-			display: block;
-			width: 700px;
-			background-color: #FFF;
-			height: auto;
-			border:double;
-			border-radius: 10px;
-			font:"Arial Black", Gadget, sans-serif;
-			font-size:16px;
+        <style>
+            #form_cadastro{
+                padding-top: 15px;
+                padding-left: 15px;
+                border-left: 20%;
+                margin-top: 10px;
+                display: block;
+                width: 700px;
+                background-color: #FFF;
+                height: auto;
+                border:double;
+                border-radius: 10px;
+                font:"Arial Black", Gadget, sans-serif;
+                font-size:16px;
             }
-	   </style>
->>>>>>> 87ff0efb4a3e9ca52d3c583c204190842d2885df
+        </style>
     </head>
     <body id="form_cadastro">
         <h3>Cadastro de usuário</h3>
@@ -102,21 +98,6 @@
                 </select>
                 <select name="ano_nasc" id="ano" class="">
                     <option value="0" selected="1">Ano</option>
-<<<<<<< HEAD
-                    <option value="00">2000</option>
-                    <option value="99">1999</option>
-                    <option value="98">1998</option>
-                    <option value="97">1997</option>
-                    <option value="96">1996</option>
-                    <option value="95">1995</option>
-                    <option value="94">1994</option>
-                    <option value="93">1993</option>
-                    <option value="92">1992</option>
-                    <option value="91">1991</option>
-                    <option value="90">1990</option>
-                    <option value="89">1989</option>
-                    <option value="88">1988</option>
-=======
                     <option value="2000">2000</option>
                     <option value="1999">1999</option>
                     <option value="1998">1998</option>
@@ -130,7 +111,6 @@
                     <option value="1990">1990</option>
                     <option value="1989">1989</option>
                     <option value="1988">1988</option>
->>>>>>> 87ff0efb4a3e9ca52d3c583c204190842d2885df
                 </select>
             </span><br /> 
             <br />

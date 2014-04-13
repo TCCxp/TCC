@@ -4,7 +4,18 @@
         <title>TCC</title>
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
         <style type="text/css">
-            
+            #conteudo_publicado{
+                border-left: 20%;
+                margin-top: 10px;
+                display: block;
+                max-width: 80%;
+                width: 80%;
+                background-color: #EEE5DE;
+                max-height: 60%;
+                height: 60%;
+                border-radius: 10px;
+                overflow: auto;                
+            }
         </style>
     </head>    
     <body id="corpo">
@@ -21,7 +32,7 @@
             <?php
             if (@$conteudo) {
                 foreach ($conteudo as $post) {
-                    echo 'Publicação:' . '<br>' . $post . '<br><br>';
+                    echo 'Publicação: ' . '<br>' . $post . '<br><br>';
                 }
             }
             ?>
@@ -36,7 +47,7 @@
         <script type="text/javascript">
             function suggest() {
                 var busca = document.getElementById('busca').value;
-        if (busca != "") {
+                if (busca != "") {
                     if (window.XMLHttpRequest) {
                         xmlhttp = new XMLHttpRequest();
                     }
@@ -54,19 +65,18 @@
             }
             $('form[name="form_post"]').submit(function() {
                 var url = "<?php echo base_url(); ?>mensagem";
-                // var dados = $('#novo_post');
                 $.ajax({
-                    dataType: 'json',
+                    dataType: 'String',
                     type: 'POST',
-                    data: $("#novo_post"), //{textarea: $("#novo_post").val()},
+                    data: $("#novo_post"),
                     url: url,
                     cache: false,
                     success:
                             function(data) {
-                                alert(data);  //as a debugging message.
+
                             }
                 });
-                return false;
+                location.reload();
             });
         </script>
     </body>
