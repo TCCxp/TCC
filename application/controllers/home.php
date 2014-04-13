@@ -32,7 +32,7 @@ class Home extends CI_Controller {
                 </script>");
         }
     }
-
+    
     function buscaperfil() {
         $busca = $this->input->get('busca');
         if (isset($busca)) {

@@ -10,6 +10,7 @@
             $this -> db -> select('id_usuario, id, conteudo, data');
             $this -> db -> from('post');
             $this -> db -> where('id_usuario',$id);
+            $this->db->order_by('id','desc');
             //$this -> db -> limit(5);
             $query = $this-> db->get();
             return $query->result();            
