@@ -1,9 +1,9 @@
-<html>
-    <head><title>TCC</title>
+<html><head><title>TCC</title>
 <<<<<<< HEAD
         <link rel="stylesheet" type="text/css" href="../css/layout.css"/>
 =======
-        <!--<link href="layout.css" rel="stylesheet" type="text/css"/>-->
+        
+    
        <style>
 	   #form_cadastro{
 			padding-top: 15px;
