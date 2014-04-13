@@ -1,0 +1,29 @@
+Como um usuário já cadastrado
+Eu quero logar no LifeInvader
+Para que eu possa postar conteúdos
+
+Cenário 1 - Login e postagem de texto no LifeInvader
+
+Dado que
+	Eu navego para "http://localhost/TCC/"
+Quando
+	Eu preencho a caixa de texto "login" com "joao"
+	E eu espero por 3 segundos	
+	E eu preencho a caixa de texto "senha" com "1234"
+	E eu espero por 3 segundos	
+	E eu clico no botão "Btn_Login"
+	E eu espero por 3 segundos
+Então
+	Eu vejo o título "Perfil - Joao"
+	E eu espero por 3 segundos	
+	E eu preencho a caixa de texto "mensagem" com "Bom dia"
+	E eu espero por 2 segundos
+	E eu vejo que a caixa de texto "mensagem" não está vazia
+	E eu clico no botão "postar"
+	E eu espero por 5 segundos
+	E eu vejo que a área de texto "post" contém "Bom dia"
+	
+
+		
+
+

@@ -1,15 +1,15 @@
 Como um usuário já cadastrado
-Eu quero procurar um outro usuário
-Então eu procuro pelo conteúdo de meu interesse
+Eu quero procurar um outro usuário cadastrado no LifeInvader
+Então eu procuro pelo usuário de meu interesse
 
 Cenário 1 - Busca de um usuário
 
 Dado que
-     Estou conectado com username "Junior" e senha "1234"
-     E eu vou para "http://localhost/TCC/principal/perfil/busca"
+     Eu vou para "http://localhost/TCC/principal/perfil/busca"
+	
 Quando
-     Eu Vejo caixa de texto "procurar"
+     Eu vejo caixa de texto "procurar"
      E eu preencho a caixa de texto "TF_busca" com "Joao"
      E eu clico em "Procurar" 
 depois
-    Eu vejo o título "Joao - LifeInvader"
+    Eu vejo o título "Perfil - Joao"
