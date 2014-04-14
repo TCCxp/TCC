@@ -1,29 +1,28 @@
+<?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
 <html>
 <head>
-<title>TCC</title>  
+<title>Cadastro</title>  
     <head><title>TCC</title>
-        <link href="../css/layout.css" rel="stylesheet" type="text/css">
-        <style>
-            #form_cadastro{
-                padding-top: 15px;
-                padding-left: 15px;
-                border-left: 20%;
-                margin-top: 10px;
-                display: block;
-                width: 700px;
-                background-color: #FFF;
-                height: auto;
-                border:double;
-                border-radius: 10px;
-                font:"Arial Black", Gadget, sans-serif;
-                font-size:16px;
-
-            }
-        </style>
+        <link href="<?php echo base_url('css/layout.css');?>" rel="stylesheet"/>
+   
     </head>
-    <body id="form_cadastro">
+    <body id="home">
+    <div id="templatemo_wrapper">
+	<div id="templatemo_top">
+    	
+    </div> <!-- end of top -->
+    
+  	<div id="templatemo_header">
+    	<div id="site_title">
+    	  <a href="http://localhost/TCC/"><img src=""width="335" height="36" /></a>
+          </div>
+       
+    </div> <!-- end of header -->
+    
+    <div id="templatemo_middle">
+    
         <h3>Cadastro de usuário</h3>
-        <div id="info_usuario">
+        <div id="form_cadastro">
             <?php echo validation_errors(); ?>
             <?php echo form_open('cadastro/novo_usuario'); ?>
             <label for="nova" >Nome Completo:</label>
@@ -123,8 +122,17 @@
                     <input type="file" name="img_perfil" accept="image/*" id="img_perfil" value="Selecione..."/>
             <!--</form>         -->
             <input type="submit" class="Btn_cadastro" value="Confirmar" id="cadastro"/>
-            <input type="submit" class="Btn_cadastro" value="Sair" id="sair"/>    
+            <input type="submit" class="Btn_cadastro" value="Sair" id="sair"/>
             <?php echo form_close(); ?>
         </div>
+        </div>
+        </div>
+    <div id="templatemo_footer_wrapper">
+    <div id="templatemo_footer">
+        Copyright © 2014 <a href="#">HUEBR</a> | 
+        Designed by <a href="https://www.facebook.com/diegohenrique.presner" rel="nofollow" target="_parent">BOD3V3IO</a>
+        <div class="cleaner"></div>
+    </div>
+</div> 
     </body>
 </html>

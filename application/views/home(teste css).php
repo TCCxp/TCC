@@ -1,11 +1,9 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
-<html>
-<head>
+<html><head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>TCC</title>
 
 <link href="<?php echo base_url('css/layout.css');?>" rel="stylesheet"/>
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 
 <script type="text/javascript" src="templatemo_339_graphite/js/swfobject.js"></script>
 <script type="text/javascript">
@@ -62,45 +60,32 @@ ddsmoothmenu.init({
               <input type="password" value="senha" name="senha" size="10" id="senha" title="password" onFocus="clearText(this)" onBlur="clearText(this)" class="txt_field" />
               <input type="submit" name="Btn_Login" value="" alt="Search" id="Btn_Login" title="Search" class="sub_btn"  />
              <?//php echo form_close(); ?>
-		</div>-->
-    </div> <!-- end of top -->
+			</div>
+   </div> <!-- end of top -->
     
   	<div id="templatemo_header">
     	<div id="site_title">
-        <div id="buscar">
-    	 <form method="">
-                <label for="busca">Pesquisar usuários:</label>
-                <input type="text" id="busca" size="50"/>
-                <input type="submit" value="Buscar" class="btn_busca" onKeyPress="suggest();"/>
-            </form>
-            </div>
-         </div>
+    	  <h1><img src="<?php echo base_url('images/.jpg')?>" width="335" height="36" /></h1></div>
         <div id="templatemo_menu" class="ddsmoothmenu">
            
-              	<h5><a style="float:right" href="home/logout"> Logout </a></h5>
+              	<h5><a href="principal/novo_usuario" class="">Cadastre-se aqui!</a></h5>
          		           
         </div> <!-- end of templatemo_menu -->
     </div> <!-- end of header -->
     
-        <div id="Perfil">
-        <?php
-		/*if (@$conteudo) {
-                foreach ($conteudo as $post) {
-                    echo 'Publicação: ' . '<br>' . $post . '<br><br>';
-                }
-            }*/
-		?>
-        
-        </div>
-        <div id="conteudo_novo">
-            <form name="form_post" method="post" action="">
-                <label for="novo_post"> Novo Post</label><br>
-                <textarea name="novo_post" id="novo_post"></textarea>
-                <input type="submit" class="btn_busca" value="Enviar"/>
+    <div id="templatemo_middle">
+        <div id="mid_left">
+            <div id="mid_title">
+                 <div id="buscar">            
+            <form method="">
+                <label for="busca">Pesquisar usuários</label>
+                <input type="text" id="busca"/>
+                <input type="submit" value="Buscar" onKeyPress="suggest();"/>
             </form>
+            <a style="float:right" href="home/logout"> Logout </a>
+            <div id="resultado"></div>
         </div>
-        
-         	<div id="conteudo_publicado">
+        <div id="conteudo_publicado">
             <?php
             if (@$conteudo) {
                 foreach ($conteudo as $post) {
@@ -109,7 +94,13 @@ ddsmoothmenu.init({
             }
             ?>
         </div>
-                
+        <div id="conteudo_novo">
+            <form name="form_post" method="post" action="">
+                <label for="novo_post"> Novo Post</label><br>
+                <textarea name="novo_post" id="novo_post"></textarea>
+                <input type="submit" value="Enviar"/>
+            </form>
+        </div>        
         <script type="text/javascript">
             function suggest() {
                 var busca = document.getElementById('busca').value;
@@ -147,10 +138,19 @@ ddsmoothmenu.init({
         </script>
             </div>
             
-        
-        
+        <div id="mid_slider">
+        	
+            <img src="<?php echo base_url('images/principal_img.jpg')?>" width="900px"/>
+    </div>
+        </div>
       
+        <div class="cleaner"></div>
         
+    </div> <!-- end of templatemo_middle -->
+    
+    <div id="templatemo_main">
+    	
+    </div> <!-- end of main -->
 </div> <!-- end of wrapper -->
 <div id="templatemo_footer_wrapper">
     <div id="templatemo_footer">
