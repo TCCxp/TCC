@@ -45,10 +45,18 @@
 				font-size:30 px;
 				margin-bottom: 10px;               
             }
+			#img_perfil{
+				background-color:#999;
+				width: 0 auto;
+				height:0 auto;
+				float:right;
+				border:double;
+				margin-bottom: 50px;
+			}
 			#Perfil{
 				margin-top: 100px;
 				background-color: #FF6; 
-				height: 100px; 
+				height: 0 auto; 
 				width: 0 auto; 
 				padding: 50px 50px 50px 50px; 
 				border-style:ridge;

@@ -82,7 +82,13 @@ ddsmoothmenu.init({
         </div> <!-- end of templatemo_menu -->
     </div> <!-- end of header -->
     
-        <div id="Perfil">
+      <div id="Perfil">
+      <div id="img_perfil"><img src="<?php echo base_url('images/perfil_img.jpg')?>" /></div>
+        <h2>Perfil</h2>
+        <h4>Nome:</h4>
+        <h5>Cidade:</h5><h5>Estado:</h5>
+        <h5>Sexo:</h5>
+        
         <?php
 		/*if (@$conteudo) {
                 foreach ($conteudo as $post) {
@@ -91,7 +97,7 @@ ddsmoothmenu.init({
             }*/
 		?>
         
-        </div>
+      </div>
         <div id="conteudo_novo">
             <form name="form_post" method="post" action="">
                 <label for="novo_post"> Novo Post</label><br>
