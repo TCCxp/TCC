@@ -57,7 +57,7 @@ ddsmoothmenu.init({
     	<div id="templatemo_login">
            <?php echo validation_errors(); ?>
                <?php echo form_open('autentica'); ?>
-              <input type="text" value="Login" name="login" size="10" id="login" title="username" onFocus="clearText(this)" onBlur="clearText(this)" class="txt_field" />
+              <input type="text" value="login" name="login" size="10" id="login" title="username" onFocus="clearText(this)" onBlur="clearText(this)" class="txt_field" />
               <input type="password" value="senha" name="senha" size="10" id="senha" title="password" onFocus="clearText(this)" onBlur="clearText(this)" class="txt_field" />
               <input type="submit" name="Btn_Login" value="" alt="Search" id="Btn_Login" title="Search" class="sub_btn"  />
              <?php echo form_close(); ?>
@@ -98,8 +98,8 @@ ddsmoothmenu.init({
 </div> <!-- end of wrapper -->
 <div id="templatemo_footer_wrapper">
     <div id="templatemo_footer">
-        Copyright © 2014 <a href="#">HUEBR</a> | 
-        Designed by <a href="https://www.facebook.com/diegohenrique.presner" rel="nofollow" target="_parent">BOD3V3IO</a>
+        Copyright © 2014 <a href="#">D&amp;E</a> | 
+        Desenvolvido por <a href="" rel="nofollow" target="_parent">D&amp;E</a>
         <div class="cleaner"></div>
     </div>
 </div> 

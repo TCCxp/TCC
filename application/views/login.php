@@ -14,8 +14,8 @@
 	<div id="templatemo_top">
     	<div id="templatemo_login">
             <form action="#" method="get">
-              <input type="text" value="Nome de usuário" name="q" size="10" id="username" title="username" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
-              <input type="password" value="senha" name="q" size="10" id="password" title="password" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
+              <input type="text" value="" name="q" size="10" id="username" title="username" onFocus="clearText(this)" onBlur="clearText(this)" class="txt_field" />
+              <input type="password" value="" name="q" size="10" id="password" title="password" onFocus="clearText(this)" onBlur="clearText(this)" class="txt_field" />
               <input type="submit" name="Search" value="" alt="Search" id="searchbutton" title="Search" class="sub_btn"  />
             </form>
 		</div>

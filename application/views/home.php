@@ -71,7 +71,7 @@ ddsmoothmenu.init({
     	 <form method="">
                 <label for="busca">Pesquisar usuários:</label>
                 <input type="text" id="busca" size="50"/>
-                <input type="submit" value="Buscar" class="btn_busca" onKeyPress="suggest();"/>
+                <input type="submit" value="Buscar" class="btn_busca" id="btn_busca" onKeyPress="suggest();"/>
             </form>
             </div>
          </div>
@@ -83,11 +83,11 @@ ddsmoothmenu.init({
     </div> <!-- end of header -->
     
       <div id="Perfil">
-      <div id="img_perfil"><img src="<?php echo base_url('images/perfil_img.jpg')?>" /></div>
+      <div id="img_perfil"><img src="<?php echo base_url('images/perfil_img.jpg')?>" id="img_perfil" /></div>
         <h2>Perfil</h2>
-        <h4>Nome:</h4>
-        <h5>Cidade:</h5><h5>Estado:</h5>
-        <h5>Sexo:</h5>
+        <h4 id="nome_usr">Nome:</h4>
+        <h5 id="cidade_usr">Cidade:</h5><h5>Estado:</h5>
+        <h5 id="sexo_usr">Sexo:</h5>
         
         <?php
 		/*if (@$conteudo) {
@@ -98,22 +98,24 @@ ddsmoothmenu.init({
 		?>
         
       </div>
-        <div id="conteudo_novo">
-            <form name="form_post" method="post" action="">
-                <label for="novo_post"> Novo Post</label><br>
-                <textarea name="novo_post" id="novo_post"></textarea>
-                <input type="submit" class="btn_busca" value="Enviar"/>
-            </form>
-        </div>
-        
+      <!--<div id="conteudo_dir"></div>-->
+      
          	<div id="conteudo_publicado">
             <?php
             if (@$conteudo) {
                 foreach ($conteudo as $post) {
-                    echo 'Publicação: ' . '<br>' . $post . '<br><br>';
+                    echo "&nbsp;&nbsp;&nbsp;&nbsp;".'Publicação: ' . '<br>' ."&nbsp;&nbsp;&nbsp;&nbsp;". $post . '<br><br>';
                 }
             }
             ?>
+        </div>
+        
+        <div id="conteudo_novo">
+            <form name="form_post" method="post" action="">
+                <label for="novo_post"> Novo Post</label><br>
+                <textarea name="novo_post" id="novo_post"></textarea>
+                <input type="submit" class="btn_busca" id="btn_enviar" value="Enviar"/>
+            </form>
         </div>
                 
         <script type="text/javascript">
@@ -160,8 +162,8 @@ ddsmoothmenu.init({
 </div> <!-- end of wrapper -->
 <div id="templatemo_footer_wrapper">
     <div id="templatemo_footer">
-        Copyright © 2014 <a href="#">HUEBR</a> | 
-        Designed by <a href="https://www.facebook.com/diegohenrique.presner" rel="nofollow" target="_parent">BOD3V3IO</a>
+        Copyright © 2014 <a href="#">D&amp;E</a> | 
+        Desenvolvido por <a href="" rel="nofollow" target="_parent">D&amp;E</a>
         <div class="cleaner"></div>
     </div>
 </div> 

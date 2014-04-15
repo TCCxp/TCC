@@ -129,8 +129,8 @@
         </div>
     <div id="templatemo_footer_wrapper">
     <div id="templatemo_footer">
-        Copyright © 2014 <a href="#">HUEBR</a> | 
-        Designed by <a href="https://www.facebook.com/diegohenrique.presner" rel="nofollow" target="_parent">BOD3V3IO</a>
+        Copyright © 2014 <a href="#">D&amp;E</a> | 
+        Desenvolvido por <a href="" rel="nofollow" target="_parent">D&amp;E</a>
         <div class="cleaner"></div>
     </div>
 </div> 
