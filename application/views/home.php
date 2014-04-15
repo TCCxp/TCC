@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>TCC</title>
+<title>Perfil</title>
 
 <link href="<?php echo base_url('css/layout.css');?>" rel="stylesheet"/>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>

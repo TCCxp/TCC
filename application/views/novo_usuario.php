@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Cadastro</title>  
-    <head><title>TCC</title>
+
         <link href="<?php echo base_url('css/layout.css');?>" rel="stylesheet"/>
    
     </head>

@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>TCC</title>
+<title>Login</title>
 
 <link href="<?php echo base_url('css/layout.css');?>" rel="stylesheet"/>
 
