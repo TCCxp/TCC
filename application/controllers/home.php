@@ -32,6 +32,27 @@ class Home extends CI_Controller {
                 </script>");
         }
     }
+	
+	function perfil(){
+		$sessao = $this->session->userdata('logado');
+		if($sessao){
+			$perfil = $this->perfil->informusr($sessao['id']);
+			$info = array();
+			foreach ($perfil as $row) {
+                $info['nome'][] = $row->nome;
+                $info['cidade'][] = $row->cidade;
+				$info['uf'][] = $row->uf;
+				$info['sexo'][] = $row->sexo;
+            }
+			$this->load->view('home', $info);
+		} else {
+			echo("<script language='JavaScript'>
+                    window.alert('Erro em resgatar informações!')
+                    window.location.href='principal';
+                </script>");
+        }
+	}
+		
     
     function buscaperfil() {
         $busca = $this->input->get('busca');

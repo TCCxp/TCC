@@ -4,6 +4,17 @@
         function __construct() {
             parent::__construct();
         }
+		
+		function informusr($id)
+        {        
+            $this -> db -> select('nome, cidade, uf, sexo');
+            $this -> db -> from('usuario');
+            $this -> db -> where('id',$id);
+            //$this->db->order_by('id','desc');
+            //$this -> db -> limit(5);
+            $query = $this-> db->get();
+            return $query->result();            
+        }
 
         function carregarperfil($id)
         {        

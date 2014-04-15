@@ -84,18 +84,12 @@ ddsmoothmenu.init({
     
       <div id="Perfil">
       <div id="img_perfil"><img src="<?php echo base_url('images/perfil_img.jpg')?>" id="img_perfil" /></div>
-        <h2>Perfil</h2>
-        <h4 id="nome_usr">Nome:</h4>
-        <h5 id="cidade_usr">Cidade:</h5><h5>Estado:</h5>
-        <h5 id="sexo_usr">Sexo:</h5>
         
-        <?php
-		/*if (@$conteudo) {
-                foreach ($conteudo as $post) {
-                    echo 'Publicação: ' . '<br>' . $post . '<br><br>';
-                }
-            }*/
-		?>
+        <h2>Perfil</h2>
+        <h4 id="nome_usr">Nome:<?php if(@$nome){foreach($nome as $info){ echo $info;}}  ?></h4>
+        <h5 id="cidade_usr">Cidade:<?php //echo($info["cidade"]); ?></h5>
+        <h5>Estado:<?php //echo ($info["uf"]);?></h5>
+        <h5 id="sexo_usr">Sexo:<?php //echo($info["sexo"]);?></h5>
         
       </div>
       <!--<div id="conteudo_dir"></div>-->
