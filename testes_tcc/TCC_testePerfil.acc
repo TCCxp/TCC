@@ -14,14 +14,15 @@ Quando
 	E eu clico no botão "Btn_Login"
 	E eu espero por 3 segundos
 Então
-	Eu vejo o título "Perfil - Joao"
+	Eu vejo o título "Perfil"
+	E eu vejo que a imagem "img_perfil" tem src de "http://localhost/TCC/images/perfil_img.jpg"
 	E eu espero por 3 segundos	
-	E eu preencho a caixa de texto "mensagem" com "Bom dia"
+	E eu preencho a caixa de texto "novo_post" com "Bom dia"
 	E eu espero por 2 segundos
-	E eu vejo que a caixa de texto "mensagem" não está vazia
-	E eu clico no botão "postar"
+	E eu vejo que a caixa de texto "novo_post" não está vazia
+	E eu clico no botão "btn_enviar"
 	E eu espero por 5 segundos
-	E eu vejo que a área de texto "post" contém "Bom dia"
+	
 	
 
 		
