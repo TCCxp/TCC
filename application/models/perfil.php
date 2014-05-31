@@ -5,13 +5,11 @@
             parent::__construct();
         }
 		
-		function informusr($id)
+        function carregarusuario($id)
         {        
             $this -> db -> select('nome, cidade, uf, sexo');
             $this -> db -> from('usuario');
-            $this -> db -> where('id',$id);
-            //$this->db->order_by('id','desc');
-            //$this -> db -> limit(5);
+            $this -> db -> where('id',$id);            
             $query = $this-> db->get();
             return $query->result();            
         }

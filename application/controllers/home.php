@@ -12,17 +12,20 @@ class Home extends CI_Controller {
 
     function index() {
         $this->carregar();
+        //$this->usuario();
     }
 
     function carregar() {
         $sessao = $this->session->userdata('logado');
         if ($sessao) {
             $dados = $this->perfil->carregarperfil($sessao['id']);
+            $usuario = $this->usuario();            
             $post = array();
             foreach ($dados as $row) {
                 $post['conteudo'][] = $row->conteudo;
-                $post['data'][] = $row->data;
-            }
+                $post['data'][] = $row->data;                
+            }                                  
+            $post = $this->usuario()+$post;                        
             $this->load->view('home', $post);
         } else {
             echo
@@ -32,28 +35,23 @@ class Home extends CI_Controller {
                 </script>");
         }
     }
-	
-	function perfil(){
-		$sessao = $this->session->userdata('logado');
-		if($sessao){
-			$perfil = $this->perfil->informusr($sessao['id']);
-			$info = array();
-			foreach ($perfil as $row) {
+
+    function usuario() {
+        $sessao = $this->session->userdata('logado');
+        if ($sessao) {
+            $perfil = $this->perfil->carregarusuario($sessao['id']);
+            $info = array();
+            foreach ($perfil as $row) {
                 $info['nome'][] = $row->nome;
                 $info['cidade'][] = $row->cidade;
-				$info['uf'][] = $row->uf;
-				$info['sexo'][] = $row->sexo;
+                $info['uf'][] = $row->uf;
+                $info['sexo'][] = $row->sexo;
             }
-			$this->load->view('home', $info);
-		} else {
-			echo("<script language='JavaScript'>
-                    window.alert('Erro em resgatar informações!')
-                    window.location.href='principal';
-                </script>");
-        }
-	}
-		
-    
+            return $info;
+            //$this->load->view('home', $info);
+        } 
+    }
+
     function buscaperfil() {
         $busca = $this->input->get('busca');
         if (isset($busca)) {
